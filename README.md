@@ -11,9 +11,9 @@ If something doesn’t work, please [file an issue](https://github.com/facebooki
 ## Quick Overview
 
 ```sh
-npm install -g joys-create-react-app
+npm install -g create-react-app
 
-joys-create-react-app my-app
+create-react-app my-app
 cd my-app/
 npm start
 ```
@@ -49,7 +49,7 @@ npm install -g create-react-app
 To create a new app, run:
 
 ```sh
-joys-create-react-app my-app
+create-react-app my-app
 cd my-app
 ```
 
