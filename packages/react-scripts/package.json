@@ -1,14 +1,10 @@
 {
   "name": "joys-react-scripts",
-  "version": "1.0.17",
+  "version": "1.0.0",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "facebookincubator/create-react-app",
   "license": "MIT",
   "engines": {
     "node": ">=6"
-  },
-  "bugs": {
-    "url": "https://github.com/facebookincubator/create-react-app/issues"
   },
   "files": [
     "bin",
@@ -19,6 +15,21 @@
   ],
   "bin": {
     "react-scripts": "./bin/react-scripts.js"
+  },
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "git add"
+    ],
+    "yarn.lock": [
+      "git rm --cached"
+    ]
   },
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -43,6 +54,7 @@
     "file-loader": "1.1.5",
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
+    "husky": "^0.14.3",
     "jest": "20.0.4",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
