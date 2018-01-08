@@ -1,6 +1,6 @@
 {
   "name": "joys-react-scripts",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
@@ -94,8 +94,10 @@
     "whatwg-fetch": "2.0.3",
     "bowser": "^1.9.1",
     "dva": "^2.1.0",
-    "joys-react-common":"^1.1.0",
-    "antd": "^3.0.3"
+    "joys-react-common": "^1.1.0",
+    "antd": "^3.0.3",
+    "lint-staged": "^6.0.0",
+    "husky": "^0.14.3"
   },
   "devDependencies": {
     "@types/history": "^4.6.2",
@@ -112,5 +114,13 @@
   },
   "optionalDependencies": {
     "fsevents": "1.1.2"
+  },
+  "globals": {
+      "ts-jest": {
+        "tsConfigFile": "/Users/zhonglvgui/Documents/work/www4.1/tsconfig.test.json"
+      }
+    },
+  "eslintConfig": {
+    "extends": "react-app"
   }
 }
