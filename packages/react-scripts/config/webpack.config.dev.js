@@ -218,6 +218,9 @@ module.exports = {
                 },
               },
               {
+                loader: paths.antdCssLoaderPath,
+              },
+              {
                 loader: require.resolve('postcss-loader'),
                 options: {
                   // Necessary for external CSS imports to work
