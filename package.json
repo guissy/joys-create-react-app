@@ -1,6 +1,6 @@
 {
   "name": "joys-react-scripts",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
@@ -93,6 +93,7 @@
     "whatwg-fetch": "2.0.3",
     "worker-loader": "baristalabs/worker-loader",
     "ts-jest": "^21.2.3",
+    "ts-loader": "^2.3.7",
     "tslint": "^5.8.0",
     "tslint-loader": "^3.5.3",
     "tslint-react": "^3.2.0",
