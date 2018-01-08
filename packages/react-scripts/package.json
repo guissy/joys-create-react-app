@@ -1,14 +1,17 @@
 {
-  "name": "react-scripts",
-  "version": "1.0.17",
+  "name": "joys-react-scripts",
+  "version": "1.0.25",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "facebookincubator/create-react-app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dylan-7/joys-create-react-app"
+  },
+  "bugs": {
+    "url": "https://github.com/dylan-7/joys-create-react-app/issues"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=6"
-  },
-  "bugs": {
-    "url": "https://github.com/facebookincubator/create-react-app/issues"
   },
   "files": [
     "bin",
@@ -19,6 +22,27 @@
   ],
   "bin": {
     "react-scripts": "./bin/react-scripts.js"
+  },
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js, jsx, ts, tsx, json}": [
+      "prettier --print-width 120 --single-quote --eofline --trailing-comma all --parser typescript --write",
+      "git add"
+    ],
+    "src/**/*.css": "stylelint",
+    "src/**/*.scss": [
+      "postcss --config path/to/your/config --replace",
+      "stylelint",
+      "git add"
+    ],
+    "yarn.lock": [
+      "git rm --cached"
+    ]
   },
   "dependencies": {
     "autoprefixer": "7.1.6",
