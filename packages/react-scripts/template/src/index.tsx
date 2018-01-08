@@ -10,7 +10,7 @@ import createBrowserHistory from 'history/createBrowserHistory'; // tslint:disab
 import LangModel from './pages/home/components/lang/lang.model';
 // import LoginModel from './pages/login/Login.model';
 import HomeModel from './pages/home/Home.model';
-import IndexHeader from './pages/home/components/header/IndexHeader.model';
+// import IndexHeader from './pages/home/components/header/IndexHeader.model';
 
 import registerServiceWorker from './registerServiceWorker';
 import Home from './pages/home/Home';
@@ -25,7 +25,7 @@ const app = dva({
 app.model(LangModel);
 // app.model(LoginModel);
 app.model(HomeModel);
-app.model(IndexHeader);
+// app.model(IndexHeader);
 
 app.router(({ history }: any) => {
   const { mobile } = bowser.detect(window.navigator.userAgent);
