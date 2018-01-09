@@ -101,6 +101,7 @@
     "whatwg-fetch": "2.0.3",
     "lint-staged": "^6.0.0",
     "husky": "^0.14.3",
+    "querystring": "^0.2.0",
     "@types/history": "^4.6.2",
     "@types/react-redux": "^5.0.14",
     "@types/react-router": "^4.0.19",
