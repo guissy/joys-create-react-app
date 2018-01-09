@@ -1,6 +1,6 @@
 {
   "name": "joys-react-scripts",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
@@ -97,7 +97,12 @@
     "joys-react-common": "^1.1.0",
     "antd": "^3.0.3",
     "lint-staged": "^6.0.0",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "mockjs": "^1.0.1-beta3",
+    "@types/mockjs": "^1.0.0",
+    "moment": "^2.20.1"
   },
   "devDependencies": {
     "@types/history": "^4.6.2",
@@ -108,18 +113,16 @@
     "@types/react-redux": "^5.0.14",
     "@types/react-router": "^4.0.19",
     "@types/react-router-dom": "^4.2.3",
-    "@types/react-router-redux": "^5.0.10",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "@types/react-router-redux": "^5.0.10"
   },
   "optionalDependencies": {
     "fsevents": "1.1.2"
   },
   "globals": {
-      "ts-jest": {
-        "tsConfigFile": "/Users/zhonglvgui/Documents/work/www4.1/tsconfig.test.json"
-      }
-    },
+    "ts-jest": {
+      "tsConfigFile": "/Users/zhonglvgui/Documents/work/www4.1/tsconfig.test.json"
+    }
+  },
   "eslintConfig": {
     "extends": "react-app"
   }
