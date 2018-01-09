@@ -1,6 +1,6 @@
 {
   "name": "joys-react-scripts",
-  "version": "1.0.38",
+  "version": "1.0.42",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
@@ -46,26 +46,15 @@
   },
   "dependencies": {
     "joys-react-common": "^1.1.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
     "mockjs": "^1.0.1-beta3",
     "bowser": "^1.9.1",
     "dva": "^2.1.0",
     "antd": "^3.0.3",
     "@types/mockjs": "^1.0.0",
     "moment": "^2.20.1",
-    "fs-extra": "3.0.1"
-  },
-  "devDependencies": {
-    "@types/history": "^4.6.2",
-    "@types/jest": "^21.1.8",
-    "@types/node": "^8.5.1",
-    "@types/react": "^16.0.31",
-    "@types/react-dom": "^16.0.3",
-    "@types/react-redux": "^5.0.14",
-    "@types/react-router": "^4.0.19",
-    "@types/react-router-dom": "^4.2.3",
-    "@types/react-router-redux": "^5.0.10",
+    "fs-extra": "3.0.1",
+    "chalk": "1.1.3",
+    "react-dev-utils": "^4.2.1",
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
@@ -74,7 +63,6 @@
     "babel-preset-react-app": "^3.1.0",
     "babel-runtime": "6.26.0",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
-    "chalk": "1.1.3",
     "css-loader": "0.28.7",
     "dotenv": "4.0.0",
     "eslint": "4.10.0",
@@ -96,7 +84,6 @@
     "postcss-loader": "2.0.8",
     "promise": "8.0.1",
     "raf": "3.4.0",
-    "react-dev-utils": "^4.2.1",
     "source-map-loader": "^0.2.1",
     "style-loader": "0.19.0",
     "sw-precache-webpack-plugin": "0.11.4",
@@ -113,7 +100,18 @@
     "webpack-manifest-plugin": "1.3.2",
     "whatwg-fetch": "2.0.3",
     "lint-staged": "^6.0.0",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "@types/history": "^4.6.2",
+    "@types/react-redux": "^5.0.14",
+    "@types/react-router": "^4.0.19",
+    "@types/react-router-dom": "^4.2.3",
+    "@types/react-router-redux": "^5.0.10"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "@types/node": "^8.5.1",
+    "@types/react": "^16.0.31",
+    "@types/react-dom": "^16.0.3"
   },
   "optionalDependencies": {
     "fsevents": "1.1.2"

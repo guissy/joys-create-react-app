@@ -83,7 +83,8 @@ module.exports = function(
           fs.appendFileSync(path.join(appPath, '.gitignore'), data);
           fs.unlinkSync(path.join(appPath, 'gitignore'));
         } else {
-          throw err;
+          // throw err;
+          console.info(`🐞: ${err}`);
         }
       }
     }
