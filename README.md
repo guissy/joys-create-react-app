@@ -12,18 +12,14 @@ joys-create-react-app that scaffolds out a React web app.
 
 ## Getting Started
 
-- Install: `npm install -g generator-react`
-- Run: `yo react`
-- Run `grunt` for building and `grunt serve` for preview
+- Install: `npm install -g create-react-app`
+
 ```
-npm install -g create-react-app
-create-react-app --scripts-version=joys-react-scripts
+create-react-app my-react-app --scripts-version=joys-react-scripts
 ```
 
-## 
+- Run: `npm run eject`
+- Run: `npm start`
 
-* `npm run eject`
 
-
-## Contribute
 
