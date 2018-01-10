@@ -19,13 +19,14 @@
     "skipLibCheck": true,
     "experimentalDecorators": true
   },
+  "include": [
+    "typings"
+  ],
   "exclude": [
     "node_modules",
     "build",
+    "config",
     "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest",
-    "src/setupTests.ts"
+    "public"
   ]
 }
