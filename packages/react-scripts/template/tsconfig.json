@@ -17,7 +17,11 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": false,
     "skipLibCheck": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "typings"
+    ]
   },
   "include": [
     "typings"

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { connect } from 'dva';
 import * as styles from './Home.less';
 import { Layout } from 'antd';
+import Main from '../main/Main'
 
 @(connect(({ login }: any) => ({ login })) as any)
 export default class Home extends React.PureComponent<HomeProps, any> {
@@ -10,21 +11,21 @@ export default class Home extends React.PureComponent<HomeProps, any> {
     this.state = {};
   }
 
-  public checkLogin(props: HomeProps) {
+  checkLogin(props: HomeProps) {
     if (!props.login || !props.login.hasLogin) {
       // props.dispatch(push({pathname: '/login'}));
     }
   }
 
-  public componentDidMount() {
+  componentDidMount() {
     this.checkLogin(this.props);
   }
 
-  public componentWillReceiveProps(nextProps: HomeProps) {
+  componentWillReceiveProps(nextProps: HomeProps) {
     this.checkLogin(nextProps);
   }
 
-  public render() {
+  render() {
     return (
       <Layout className={styles.wrapper}>
         <Layout.Header className={styles.header}>
