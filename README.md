@@ -9,6 +9,9 @@ joys-create-react-app that scaffolds out a React web app.
 * Automagically lint your scripts
 * Awesome Image Optimization (via OptiPNG, pngquant, jpegtran and gifsicle)
 * Unit Testing with jest.js
+* less
+* antd
+* dva
 
 ## Getting Started
 
