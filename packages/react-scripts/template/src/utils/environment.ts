@@ -29,8 +29,6 @@ const environment = {
 
   hostAPI: 'http://localhost:8020', // `${https}//api.${domain}`, // ajax json
   wwwimgurl: `${https}//res.${domain}`, // 资源站图片
-  mobileurl: `${https}//m.${domain}`, // 手机外链
-  agentURL: `${https}//agent.${domain}`, // 代理外链
   sport: site.sport, // iframe 外链
 
   theme: initTheme(site.theme, isDevTheme), // 主题值为：'1','2'...
@@ -41,10 +39,10 @@ const environment = {
   logo: logo.normal, // LOGO
   copyrights: site.copyright, // © 版权所有
 
-  tokenName: 'xlz_token', // sessionStorage Key
-  expiration: 'xlz_exp', // sessionStorage Key
-  loginInfo: 'xlz_loginInfo', // sessionStorage Key
-  app_link: 'xlz_app_link', // sessionStorage Key
+  tokenName: 'joys_token', // sessionStorage Key
+  expiration: 'joys_exp', // sessionStorage Key
+  loginInfo: 'joys_loginInfo', // sessionStorage Key
+  app_link: 'joys_app_link', // sessionStorage Key
 
   invitedCode: initCode(),
 
