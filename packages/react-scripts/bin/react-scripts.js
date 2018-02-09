@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 /**
+ * mast be LF
+ *
  * Copyright (c) 2015-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
